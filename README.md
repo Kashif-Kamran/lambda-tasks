@@ -25,7 +25,7 @@ By working on this project, you will:
 
 ## Architecture Diagram
 
-![Uploading Architecture_diagram.png…]()
+![Architecture_diagram](https://github.com/user-attachments/assets/71ed97b0-b718-4194-9db9-0a1990acb4c8)
 
 The architecture diagram illustrates the flow of data and events across the AWS services used in this project.
 
