@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@functions/*": [
+                "src/functions/*"
+            ],
+            "@libs/*": [
+                "src/libs/*"
+            ],
+            "@database/*": [
+                "src/database/*"
+            ],
+            "@domain/*": [
+                "src/domain/*"
+            ],
+            "@controllers/*": [
+                "src/controllers/*"
+            ],
+            "@services/*": [
+                "src/services/*"
+            ],
+            "@config/*": [
+                "src/config/*"
+            ]
+        }
+    }
+}

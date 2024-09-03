@@ -1,0 +1,34 @@
+service: csv-processor
+frameworkVersion: '3'
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+
+functions:
+  csv-converter:
+    name: csv-converter
+    handler: src/functions/csv-converter/handler.main
+    timeout: 30
+
+  csv-reader:
+    name: csv-reader
+    handler: src/functions/csv-reader/handler.main
+    timeout: 30
+
+package:
+  individually: true
+
+custom:
+  esbuild:
+    bundle: true
+    minify: false
+    sourcemap: true
+    target: 'node18'
+    exclude: []
+    define: { 'require.resolve': undefined }
+    platform: 'node'
+    concurrency: 10
